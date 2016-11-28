@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D4BA2851D35578400ABC942 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4BA2841D35578400ABC942 /* AppDelegate.swift */; };
+		9D4BA2871D35578400ABC942 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4BA2861D35578400ABC942 /* ViewController.swift */; };
+		9D4BA2891D35578400ABC942 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D4BA2881D35578400ABC942 /* Assets.xcassets */; };
+		9D4BA28C1D35578400ABC942 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4BA28A1D35578400ABC942 /* Main.storyboard */; };
+		9D4BA2A51D3557B200ABC942 /* MetalContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4BA2A41D3557B200ABC942 /* MetalContext.swift */; };
+		9D4BA2A71D3558E900ABC942 /* spheremap.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D4BA2A61D3558E900ABC942 /* spheremap.png */; };
+		9D4BA2AA1D35595300ABC942 /* MetalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4BA2A91D35595300ABC942 /* MetalHelpers.swift */; };
+		9D4BA2AC1D355CE800ABC942 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4BA2AB1D355CE800ABC942 /* MetalView.swift */; };
+		9D4BA2AF1D35870300ABC942 /* VertexShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 9D4BA2AE1D35870300ABC942 /* VertexShaders.metal */; };
+		9D4BA2B21D3638AE00ABC942 /* SphereVertices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4BA2B11D3638AE00ABC942 /* SphereVertices.swift */; };
+		9D4BA2B51D363BCF00ABC942 /* DrawPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4BA2B41D363BCF00ABC942 /* DrawPass.swift */; };
+		9D4BA2B71D365FD400ABC942 /* Matrix4x4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4BA2B61D365FD400ABC942 /* Matrix4x4.swift */; };
+		9D4BA2B91D3664A200ABC942 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4BA2B81D3664A200ABC942 /* Camera.swift */; };
+		9D4BA2BB1D366DA700ABC942 /* sphere1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D4BA2BA1D366DA700ABC942 /* sphere1.jpg */; };
+		9D4BA2BD1D36702400ABC942 /* sphere2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D4BA2BC1D36702400ABC942 /* sphere2.jpg */; };
+		9D4BA2BF1D3670B300ABC942 /* sphere3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D4BA2BE1D3670B300ABC942 /* sphere3.jpg */; };
+		9D4BA3061D3D1BC500ABC942 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4BA3051D3D1BC500ABC942 /* Helpers.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D4BA2811D35578400ABC942 /* 3d-metal-viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3d-metal-viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4BA2841D35578400ABC942 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D4BA2861D35578400ABC942 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D4BA2881D35578400ABC942 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D4BA28B1D35578400ABC942 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D4BA28D1D35578400ABC942 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D4BA2A41D3557B200ABC942 /* MetalContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalContext.swift; sourceTree = "<group>"; };
+		9D4BA2A61D3558E900ABC942 /* spheremap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spheremap.png; sourceTree = "<group>"; };
+		9D4BA2A91D35595300ABC942 /* MetalHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalHelpers.swift; sourceTree = "<group>"; };
+		9D4BA2AB1D355CE800ABC942 /* MetalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		9D4BA2AE1D35870300ABC942 /* VertexShaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = VertexShaders.metal; sourceTree = "<group>"; };
+		9D4BA2B11D3638AE00ABC942 /* SphereVertices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SphereVertices.swift; sourceTree = "<group>"; };
+		9D4BA2B41D363BCF00ABC942 /* DrawPass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawPass.swift; sourceTree = "<group>"; };
+		9D4BA2B61D365FD400ABC942 /* Matrix4x4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Matrix4x4.swift; sourceTree = "<group>"; };
+		9D4BA2B81D3664A200ABC942 /* Camera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		9D4BA2BA1D366DA700ABC942 /* sphere1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sphere1.jpg; sourceTree = "<group>"; };
+		9D4BA2BC1D36702400ABC942 /* sphere2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sphere2.jpg; sourceTree = "<group>"; };
+		9D4BA2BE1D3670B300ABC942 /* sphere3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sphere3.jpg; sourceTree = "<group>"; };
+		9D4BA3051D3D1BC500ABC942 /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D4BA27E1D35578400ABC942 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D4BA2781D35578400ABC942 = {
+			isa = PBXGroup;
+			children = (
+				9D4BA2831D35578400ABC942 /* 3d-metal-viewer */,
+				9D4BA2821D35578400ABC942 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D4BA2821D35578400ABC942 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D4BA2811D35578400ABC942 /* 3d-metal-viewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D4BA2831D35578400ABC942 /* 3d-metal-viewer */ = {
+			isa = PBXGroup;
+			children = (
+				9D4BA2A81D3558EF00ABC942 /* resources */,
+				9D4BA2A31D3557A800ABC942 /* metal */,
+				9D4BA2841D35578400ABC942 /* AppDelegate.swift */,
+				9D4BA2861D35578400ABC942 /* ViewController.swift */,
+				9D4BA2881D35578400ABC942 /* Assets.xcassets */,
+				9D4BA28A1D35578400ABC942 /* Main.storyboard */,
+				9D4BA28D1D35578400ABC942 /* Info.plist */,
+			);
+			name = "3d-metal-viewer";
+			path = src;
+			sourceTree = "<group>";
+		};
+		9D4BA2A31D3557A800ABC942 /* metal */ = {
+			isa = PBXGroup;
+			children = (
+				9D4BA2B31D363BAD00ABC942 /* input */,
+				9D4BA2B01D36389D00ABC942 /* tools */,
+				9D4BA2AD1D3586F800ABC942 /* shaders */,
+				9D4BA2A41D3557B200ABC942 /* MetalContext.swift */,
+				9D4BA2A91D35595300ABC942 /* MetalHelpers.swift */,
+				9D4BA2AB1D355CE800ABC942 /* MetalView.swift */,
+			);
+			name = metal;
+			sourceTree = "<group>";
+		};
+		9D4BA2A81D3558EF00ABC942 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				9D4BA2BE1D3670B300ABC942 /* sphere3.jpg */,
+				9D4BA2BC1D36702400ABC942 /* sphere2.jpg */,
+				9D4BA2BA1D366DA700ABC942 /* sphere1.jpg */,
+				9D4BA2A61D3558E900ABC942 /* spheremap.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		9D4BA2AD1D3586F800ABC942 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				9D4BA2AE1D35870300ABC942 /* VertexShaders.metal */,
+			);
+			name = shaders;
+			sourceTree = "<group>";
+		};
+		9D4BA2B01D36389D00ABC942 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				9D4BA2B11D3638AE00ABC942 /* SphereVertices.swift */,
+				9D4BA2B61D365FD400ABC942 /* Matrix4x4.swift */,
+				9D4BA2B81D3664A200ABC942 /* Camera.swift */,
+				9D4BA3051D3D1BC500ABC942 /* Helpers.swift */,
+			);
+			name = tools;
+			sourceTree = "<group>";
+		};
+		9D4BA2B31D363BAD00ABC942 /* input */ = {
+			isa = PBXGroup;
+			children = (
+				9D4BA2B41D363BCF00ABC942 /* DrawPass.swift */,
+			);
+			name = input;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D4BA2801D35578400ABC942 /* 3d-metal-viewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D4BA29B1D35578400ABC942 /* Build configuration list for PBXNativeTarget "3d-metal-viewer" */;
+			buildPhases = (
+				9D4BA27D1D35578400ABC942 /* Sources */,
+				9D4BA27E1D35578400ABC942 /* Frameworks */,
+				9D4BA27F1D35578400ABC942 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "3d-metal-viewer";
+			productName = sph;
+			productReference = 9D4BA2811D35578400ABC942 /* 3d-metal-viewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D4BA2791D35578400ABC942 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Christopher Helf";
+				TargetAttributes = {
+					9D4BA2801D35578400ABC942 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
+					};
+				};
+			};
+			buildConfigurationList = 9D4BA27C1D35578400ABC942 /* Build configuration list for PBXProject "3d-metal-viewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D4BA2781D35578400ABC942;
+			productRefGroup = 9D4BA2821D35578400ABC942 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D4BA2801D35578400ABC942 /* 3d-metal-viewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D4BA27F1D35578400ABC942 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4BA2A71D3558E900ABC942 /* spheremap.png in Resources */,
+				9D4BA2BD1D36702400ABC942 /* sphere2.jpg in Resources */,
+				9D4BA2891D35578400ABC942 /* Assets.xcassets in Resources */,
+				9D4BA2BB1D366DA700ABC942 /* sphere1.jpg in Resources */,
+				9D4BA2BF1D3670B300ABC942 /* sphere3.jpg in Resources */,
+				9D4BA28C1D35578400ABC942 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D4BA27D1D35578400ABC942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D4BA2B91D3664A200ABC942 /* Camera.swift in Sources */,
+				9D4BA3061D3D1BC500ABC942 /* Helpers.swift in Sources */,
+				9D4BA2AC1D355CE800ABC942 /* MetalView.swift in Sources */,
+				9D4BA2AF1D35870300ABC942 /* VertexShaders.metal in Sources */,
+				9D4BA2B21D3638AE00ABC942 /* SphereVertices.swift in Sources */,
+				9D4BA2AA1D35595300ABC942 /* MetalHelpers.swift in Sources */,
+				9D4BA2871D35578400ABC942 /* ViewController.swift in Sources */,
+				9D4BA2B51D363BCF00ABC942 /* DrawPass.swift in Sources */,
+				9D4BA2B71D365FD400ABC942 /* Matrix4x4.swift in Sources */,
+				9D4BA2851D35578400ABC942 /* AppDelegate.swift in Sources */,
+				9D4BA2A51D3557B200ABC942 /* MetalContext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D4BA28A1D35578400ABC942 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D4BA28B1D35578400ABC942 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D4BA2991D35578400ABC942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9D4BA29A1D35578400ABC942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		9D4BA29C1D35578400ABC942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/src/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MTL_FAST_MATH = NO;
+				MTL_OPTIMIZATION_LEVEL = 0;
+				MTL_PREPROCESSOR_DEFINITIONS = "";
+				OTHER_CFLAGS = "-fnative-double";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helf.sph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9D4BA29D1D35578400ABC942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/src/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MTL_FAST_MATH = NO;
+				MTL_OPTIMIZATION_LEVEL = 0;
+				MTL_PREPROCESSOR_DEFINITIONS = "";
+				OTHER_CFLAGS = "-fnative-double";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.helf.sph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D4BA27C1D35578400ABC942 /* Build configuration list for PBXProject "3d-metal-viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D4BA2991D35578400ABC942 /* Debug */,
+				9D4BA29A1D35578400ABC942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D4BA29B1D35578400ABC942 /* Build configuration list for PBXNativeTarget "3d-metal-viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D4BA29C1D35578400ABC942 /* Debug */,
+				9D4BA29D1D35578400ABC942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D4BA2791D35578400ABC942 /* Project object */;
+}
