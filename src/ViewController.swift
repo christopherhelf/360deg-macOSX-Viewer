@@ -43,7 +43,8 @@ class ViewController: NSViewController {
         
         self.view.addSubview(metalView)
         
-        texture = MetalHelpers.loadImageFromPath("/Users/christopher/ownCloud/masterhesis/metalproject/sph/sph/sphere3.jpg")!
+        let url = Bundle.main.path(forResource: "sphere3", ofType: "jpg")
+        texture = MetalHelpers.loadImageFromPath(url!)!
         metalView.texture = texture
     }
 
